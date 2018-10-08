@@ -13,7 +13,7 @@ function nowServing(line) {
 
 function currentLine(line) {
     if (line.length >= 1) {
-      return `The line is currently ${line[]} ` + (line.shift()) + `.`;
+      return `The line is currently: ${line[]} ` + (line.shift()) + `.`;
   } else {
     return `The line is currently empty.`
   }
