@@ -4,5 +4,10 @@ function takeANumber(line, person) {
 }
 
 function nowServing(line, person) {
+  if (line.length >= 1) {
+    line.shift
+  } else {
+    return `There is nobody waiting to be served!`
+  }
 
 }
