@@ -3,7 +3,7 @@ function takeANumber(line, person) {
   return `Welcome, ${person}. You are number ` + (line.length) + ` in line.`
 }
 
-function nowServing(line, person) {
+function nowServing(line) {
   if (line.length >= 1) {
     line.shift()
   } else {
