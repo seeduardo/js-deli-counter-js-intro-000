@@ -13,7 +13,8 @@ function nowServing(line) {
 
 function currentLine(line) {
   if (line.length >= 1) {
-    return `Currently serving ` + (line.shift()) + `.`;
+    for (var current = line.length; current >= 1; current++) {   
+      return `Currently serving ` + (line.shift()) + `.`;
   } else {
     return `The line is currently empty.`
   }
