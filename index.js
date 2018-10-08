@@ -1,3 +1,3 @@
 function takeANumber(line, person) {
-var 
+return `Welcome, ${person}. You are number` + (line.length + 1) + `in line.` 
 }
