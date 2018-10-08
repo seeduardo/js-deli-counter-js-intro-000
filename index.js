@@ -12,7 +12,7 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
-    for (var current = line.length; current >= 1; current++) {
+    if (line.length >= 1) {
       return `The line is currently ${line[]} ` + (line.shift()) + `.`;
   } else {
     return `The line is currently empty.`
