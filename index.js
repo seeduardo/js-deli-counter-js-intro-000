@@ -13,6 +13,9 @@ function nowServing(line) {
 
 function currentLine(line) {
   var indexedPerson = [];
+  for (var end = 0, current = line.length; end < current; end++) {
+      indexedPerson.push(`${end + 1}. ${line[end]}`)}
+
     if (line.length >= 1) {
       return `The line is currently: ${line[]} ` + (line.shift()) + `.`;
   } else {
