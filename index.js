@@ -5,7 +5,7 @@ function takeANumber(line, person) {
 
 function nowServing(line) {
   if (line.length >= 1) {
-    console.log("Currently serving " + line[0] + ".");
+    return `Currently serving ` + (line[0]) + `.`);
     line.shift()
   } else {
     return `There is nobody waiting to be served!`
